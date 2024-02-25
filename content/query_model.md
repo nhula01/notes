@@ -1,8 +1,6 @@
-+++
+---
 title = "Query Gate"
-author = ["DESKTOP-PNLN52S"]
-draft = false
-+++
+---
 
 The computational model is usually built as
 
