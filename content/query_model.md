@@ -1,5 +1,5 @@
 ---
-title = "Query Gate"
+title: Query Gate
 ---
 
 The computational model is usually built as
