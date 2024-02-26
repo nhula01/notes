@@ -1,18 +1,15 @@
 +++
-title = "Deutsch's Problem"
+title = "Deutsch's Algorithm"
 author = ["DESKTOP-PNLN52S"]
+date = 2024-02-26T00:00:00-07:00
+lastmod = 2024-02-26T00:00:00-07:00
+tags = ["moc"]
 draft = false
 +++
 
-Look at [Query Gate]({{< relref "#d41d8c" >}})
+**Link**:
 
-```latex
-\documentclass{article}
-\begin{document}
-Hello, LaTeX!
-$n \in x$
-\end{document}
-```
+Built as: [Query Problem]({{< relref "query_problem.md" >}})
 
 <div class="LaTeX">
 

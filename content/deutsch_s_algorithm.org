@@ -1,23 +1,15 @@
-#+hugo_base_dir: /home/phihungnguyen/blog/secondbrain
-* Deutsch's Problem
 :PROPERTIES:
-:EXPORT_FILE_NAME: deutsch_problem
-:ID:       9aef3386-da89-40f4-baae-76c05b109a3c
+:ID:       e6ddab00-5c65-4113-aecf-2fc8c66f566c
 :END:
-#+title: deutsch
+#+title: Deutsch's Algorithm
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz/ 
+#+hugo_section: notes
+#+date: [2024-02-26 Mon]
+#+hugo_lastmod: [2024-02-26 Mon]
+*Link*:  
 
-
-
-Look at [[id:37409b01-071d-4cca-b3bb-7ba1b46845e8la][Query Gate]] 
-#+BEGIN_SRC latex
-\documentclass{article}
-\begin{document}
-Hello, LaTeX!
-$n \in x$
-\end{document}
-#+END_SRC
-
-
+Built as: [[id:e66c5ded-28d1-46f1-872c-522e3f15c0af][Query Problem]]
 #+BEGIN_LaTeX
 \section{Introduction}
 This is LaTeX content directly within Org mode. You can write your LaTeX code here.
@@ -89,4 +81,16 @@ After applying the hadamard again, we obtain the final solution:
    (-1)^{f(0)} \ket{-} \ket{1} \quad \text{if} f(0) \otimes f(1) = 1
 \end{cases}
 \end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
 

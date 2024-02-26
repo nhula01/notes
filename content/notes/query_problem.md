@@ -1,21 +1,25 @@
----
-title: Query Gate
----
++++
+title = "Query Problem"
+author = ["DESKTOP-PNLN52S"]
+date = 2024-02-26T00:00:00-07:00
+lastmod = 2024-02-26T00:00:00-07:00
+tags = ["moc"]
+draft = false
++++
+
+**Link**:
 
 The computational model is usually built as
 
-input -&gt; computation -&gt; output
 
+## Here {#here}
+
+input -&gt; computation -&gt; output
 For query model, the input is not provided to the computation.
 The input is a function that the computation acceses by making queries.
 (random access to the input)
 
 input
-
-|  |
-|--|
-|  |
-
 computation ---&gt; output
 
 Since the input is hidden (oracle/blackbox), only by asking the information of
@@ -30,7 +34,7 @@ Efficiency of query algorithms: the number of queries made.
 Examples:
 
 
-## OR {#or}
+### OR {#or}
 
 \\(f: \sum^n -> \sum\\)
 
@@ -38,7 +42,7 @@ Output 1 if there exists string \\(x\in\sum^n\\) for which \\(f(x)=1\\)
 Output 0 if there is no string like that/
 
 
-## Parity {#parity}
+### Parity {#parity}
 
 \\(f: \sum^n -> \sum\\)
 The goal is to determine if it is even or odd
@@ -46,7 +50,7 @@ The goal is to determine if it is even or odd
 1 otherwise
 
 
-## Minimum {#minimum}
+### Minimum {#minimum}
 
 \\(f: \sum^n -> \sum^m\\)
 compute the minimum of the intergers

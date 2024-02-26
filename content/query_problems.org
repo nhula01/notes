@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       6f71fdd1-cdbc-4392-acb6-0c78d9128b62
+:END:
+#+title: Query Problems
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz 
+#+hugo_section: notes
+#+date: [2024-02-26 Mon]
+#+hugo_lastmod: [2024-02-26 Mon]
+#+hugo_tags: 
+*Link*:  
+
+The computational model is usually built as input -> computation -> output
+For query model, the input is not provided to the computation.
+The input is a function that the computation acceses by making queries.
+(random access to the input)
+input
+computation ---> output
+
+Since the input is hidden (oracle/blackbox), only by asking the information of
+the input could be revealed

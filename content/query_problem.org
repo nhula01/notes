@@ -1,21 +1,22 @@
-#+hugo_base_dir: /home/phihungnguyen/blog/secondbrain
-* Query Gate 3
 :PROPERTIES:
-:EXPORT_FILE_NAME: query_model3
-:ID:       37409b01-071d-4cca-b3bb-7ba1b46845e8la
+:ID:       e66c5ded-28d1-46f1-872c-522e3f15c0af
 :END:
-#+title: query
+#+title: Query Problem
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz/ 
+#+hugo_section: notes
+#+date: [2024-02-26 Mon]
+#+hugo_lastmod: [2024-02-26 Mon]
+*Link*:  
 
 The computational model is usually built as
-[[id:9aef3386-da89-40f4-baae-76c05b109a3c][Deutsch's Problem]]
+* Here
 input -> computation -> output
-
 For query model, the input is not provided to the computation.
 The input is a function that the computation acceses by making queries.
 (random access to the input)
 
 input
-|
 computation ---> output
 
 Since the input is hidden (oracle/blackbox), only by asking the information of
@@ -51,4 +52,7 @@ For example
 
 unique Search:
 we guarante that there is only one for which $f(x)=1$
+
+
+
 
