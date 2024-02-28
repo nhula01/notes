@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       5c369b3c-9296-4f6c-aad5-4f17e619d55a
+:END:
+#+title: MultipleQubits
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz 
+#+hugo_section: QuantumInformation/FundamentalConcepts
+#+date: [2024-02-27 Tue]
+#+hugo_lastmod: [2024-02-27 Tue]
+#+hugo_tags: noexport
+*Link*:  
+
+* Quick Information:
+The n-qubit system has $2^n$ computational basis states.
+
+The four EPR qubit states are:
+
+$$
+\ket{\phi_{\pm}} = \frac{1}{\sqrt{2} } (\ket{00} \pm \ket{11}) \
+\ket{\psi_{\pm}} = \frac{1}{\sqrt{2} } (\ket{01} \pm \ket{10})
+$$
+
+
+* Details
+
+We can combine multiple single qubits together to create a bigger system. For example, we can combine:
+
+$$
+\ket{\psi_1} = \alpha_1 \ket{0} + \beta_1 \ket{1} \
+\ket{\psi_2} = \alpha_2 \ket{0} + \beta_2 \ket{1} \
+$$
+
+through the [[id:e15a5f6b-1faf-4891-8774-2610df75a531][tensor product]] to obtain:
+
+$$
+\begin{aligned}
+	\ket{\psi} &= \ket{\psi_1} \otimes \ket{\psi_2} \
+&= (\alpha_1 \ket{0} + \beta_1 \ket{0}) \otimes (\alpha_2 \ket{0} + \beta_2 \ket{0}) \
+&= \alpha_1 \alpha_2 \ket{00} + \alpha_1 \beta_2 \ket{01}
++ \beta_1 \alpha_2 \ket{10} + \beta_1 \beta_2 \ket{11}
+\end{aligned}
+$$
+
+Now, the new computational basis has $2^2$ states $$ \ket{00}, \ket{01}, \ket{10}, \ket{11}$$.
+
+In this sense, we can create $$n$$ qubit state system with $$2^n$$ computational basis states.
+
+Most notable two qubit states are the bell states (EPR). These states create the entanglement between two states
+which have spooky action at a distance. The four EPR states are:
+
+$$
+\ket{\phi_{\pm}} = \frac{1}{\sqrt{2} } (\ket{00} \pm \ket{11}) \
+\ket{\psi_{\pm}} = \frac{1}{\sqrt{2} } (\ket{01} \pm \ket{10})
+$$
+
+
+
+
+
+
+
+
+
+
