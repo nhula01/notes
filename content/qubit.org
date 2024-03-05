@@ -1,0 +1,99 @@
+:PROPERTIES:
+:ID:       23af74d8-4dd3-4f9b-9482-7aac308ecc97
+:END:
+#+title: qubit
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz 
+#+hugo_section: QuantumInformation/FundamentalConcepts
+#+date: [2024-02-29 Thu]
+#+hugo_lastmod: [2024-02-29 Thu]
+#+hugo_tags: 
+*Link*:  
+
+
+
+* Quick Look at Important Information:
+
+$$
+\ket{\psi} = \cos{\frac{\theta}{2}} \ket{0} + e^{i\phi} \sin{\frac{\theta}{2}} \ket{1}
+$$
+
+* Details
+Qubits can be in states different than $ \ket{0}$ and $ \ket{1}$.
+
+For example, the qubit could be in the superposition state:
+$$ \ket{\psi} = \alpha \ket{0} + \beta \ket{1} $$.
+
+The states $$ \ket{0} $$ and  $$ \ket{1} $$ form a complete [[id:8d532ccd-ab9f-4d6d-82d1-2a88bdbe8aa8][Complete]]
+and [[id:b3ae2a51-bf60-4287-9466-260a2293bf94][orthonormal basis]]. These states are also called the computationaal
+bases. 
+
+
+When we measure this qubit in computational basis, the result we get
+is either $$ \ket{0}$$ or $$ \ket{1}$$ with the probability of $$|\alpha|^2$$
+or $$|\beta|^2$$ respectively.
+
+We can write the general state $$ \ket{\psi}$$ in terms of a global phase and a relative phase. Assume:
+
+$$
+\begin{aligned}
+	\alpha &= \cos{\frac{\theta}{2}} e^{i \phi_\alpha} \
+\beta &= \sin{\frac{\theta}{2}} e^{i\phi_\beta}
+\end{aligned}
+$$
+
+
+where $$0 \leq \theta \leq \pi$$ around the Z axis and $$0 \leq \phi_\alpha \phi_\beta < 2\pi$$ spanding the XY plane
+
+Therefore, the general state is given:
+
+$$
+\begin{aligned}
+	\ket{\psi} &= \alpha \ket{0} + \beta \ket{1} \
+&= \cos{\frac{\theta}{2}} e^{i\phi_\alpha}\ket{0} + \sin{\frac{\theta}{2}} e^{i\phi_\beta} \ket{1}  \
+&= e^{i\phi_\alpha} (\cos{\frac{\theta}{2}} \ket{0} + e^{i(\phi_\beta - \phi_\alpha)} \sin{\frac{\theta}{2}} \ket{1})
+\end{aligned}
+$$
+
+The global phase will collapse after measurement without any observable effects. However,
+the relative phase $$e^{i\phi}$$ plays a very important role. (Note: $$e^{i(\phi_\beta-\phi_\alpha)}$$)
+
+One might wonder how much information the qubit could store. Before the measurement, the qubit superposition seems
+to cover all the space. However, the information only collapses to 1 bit at the end.
+
+
+* Spin 1/2 representation
+From the definition of [[id:39f27979-7e12-4a84-8556-25e666b56a1a][symmetry]] and [[id:66b72e12-5cf4-4541-a283-f46236dbdee6][generator]]
+Let's now apply to rotations! An infinitestimal rotation counterclockwise about
+$$ \hat{n} = (n_1,n_2,n_3)$$ is expressed as:
+
+$$
+R(\hat{n},\theta) = I - i d\theta \hat{n} \cdot \vec{J}
+$$
+
+Thus, a finite rotation is:
+
+$$
+R(\hat{n},\theta) = e^{-i \theta \hat{n} \cdot \vec{J}}
+$$
+
+Rotation of distinct axis dont commute since the relations is.
+$$
+[J_k,J_l] = i \epsilon_{klm} J_m
+$$
+
+Now, we find the unitary version of rotations $$ \mathbf{J}$$
+
+continue nextime here 
+
+
+
+
+
+
+
+
+
+Reference: EEE 492, Quantum Computation and Quantum Information, Preskill's Lecture
+
+

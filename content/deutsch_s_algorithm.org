@@ -9,23 +9,14 @@
 #+hugo_lastmod: [2024-02-26 Mon]
 *Link*:  
 
-Built as: [[id:e66c5ded-28d1-46f1-872c-522e3f15c0af][Query Problem]]
-#+BEGIN_LaTeX
-\section{Introduction}
-This is LaTeX content directly within Org mode. You can write your LaTeX code here.
-
-\begin{equation}
-E = mc^2
-\end{equation}
-#+END_LaTeX
-
 Learn about the query here:
 Deustch's algorithm solves the parity problem for \(n=1\).
+[[/home/phihungnguyen/quartz/content/deutsch_s_algorithm.org_20240301_092831_D224Xu.png]]
 
+{{ $image := resources.Get "../static/ox-hugo/banner.png"}}
 Deutsch's problem:
 
 Input: a function \( f:\{0,1\} \to \{0,1\} \)
-
 Output: 0 if f is constant, 1 if f is balanced
 
 The quantum circuit looks like this :

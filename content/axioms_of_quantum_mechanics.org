@@ -1,0 +1,124 @@
+:PROPERTIES:
+:ID:       6a188d9f-a9c6-4c85-824f-b97e8dd0f76e
+:END:
+#+title: axioms-of-quantum-mechanics
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz 
+#+hugo_section: QuantumInformation/States_and_Ensembles
+#+date: [2024-02-28 Wed]
+#+hugo_lastmod: [2024-02-28 Wed]
+#+hugo_tags: noexport
+*Link*:  
+
+
+We know that all quantum systems must essentially be open, but it is always good to study the system as
+a closed system at first
+
+* Axiom 1 States 
+:PROPERTIES:
+:ID:       68786c76-21fd-4ab1-b921-66f733a1723a
+:END:
+A state is a complete description of a physical system. In quantum mechanics, a state is a ray (norm 1) in [[id:02ca0058-f6a9-4c68-8780-fdfeb5f7e06e][Hilbert space]].
+
+A ray is a state for which $$ \braket{\psi|\psi} = 1$$. The global phase could be ignored.
+
+Given any two states, we can write as in the [[id:23af74d8-4dd3-4f9b-9482-7aac308ecc97][qubit]]
+
+* Axiom 2. Observables
+:PROPERTIES:
+:ID:       2a7cbb14-d350-4263-bd8f-c202ff8604a4
+:END:
+An observable is a property of a physical system that in principle can be measured. In quantum mechanics, an
+observable is a [[id:e8cf06aa-3b51-48a6-92db-c2de9c8959e1][self-adjoint]] operator.
+
+
+* Axiom 3. Measurement
+A measurement is a process in which the information about the state of a physical system is acquired by an observer.
+In quantum mechanics, the measurement of an observable $$ \mathbf{A}$$ prepares an eigenstate of $$ \mathbf{A}$$
+and the observer learns the value of the corresponding eigenvalue. If the quatum state just prior to the measurement
+is $$ \ket{\psi}$$, then the outcome $$ a_n$$ is obtained with a prior probability of :
+
+$$
+Prob(a_n) = || \mathbf{E_n} \ket{\psi}||^2 = \bra{\psi} \mathbf{E_n} \ket{\psi}
+$$
+
+If the outcome $$ a_n$$ is obtained, then the quatum state collapses to:
+
+$$
+\frac{\mathbf{E_n} \ket{\psi}}{||\mathbf{E_n \ket{\psi}}||}
+$$
+
+If we repeat this measurement on the same basis state again, we will obtain the probability of 1 getting $$ a_n$$
+
+By repeating measuring many identical qubits, the expectation outcome is
+
+$$
+\langle a \rangle = \sum_n a_n \bra{\psi} \mathbf{E_n} \ket{\psi} = \bra{\psi} \mathbf{A} \ket{\psi}
+$$
+
+* Axiom 4. Dynamics
+Dynamics describes how a state evolves over time. In quantum mechanics, the time evolution of a closed system is described by a unitary operator
+
+Give a unitary operator $$ U(t',t)$$, the evolution from $$ t \mapsto t'$$ is:
+
+$$ \ket{\psi(t')} = U(t',t) \ket{\psi(t)}$$
+
+For infinitesimal time evolution, it is governed by the Schrodinger equation
+
+$$
+\frac{d}{dt} \ket{\psi(t)} = -i \mathbf{H(t)} \ket{\psi(t)} \quad \textbf{(1)} \
+\ket{\psi(t)} = e^{-i \mathbf{H(t)}t} \ket{\psi(0)} 
+$$
+
+where $$ \mathbf{H}$$ is the hamiltonian of the system. Note that we have assume the planck constant to be 1.
+From (1), a change in wave $$ d\ket{\psi}$$ after a $$ dt$$ is:
+
+$$
+d \ket{\psi(t)} = -i \mathbf{H} dt \ket{\psi(t)}
+$$
+
+Therefore, the wave evolution after a small $$ dt$$ is:
+
+$$
+\begin{aligned}
+\ket{\psi(t)} + d \ket{\psi(t)} &= \ket{\psi(t)} -i \mathbf{H} dt \ket{\psi(t)}\
+\ket{\psi(t+dt)} &= (\mathbf{I}-i \mathbf{H(t)}dt) \ket{\psi(t)}
+\end{aligned}
+$$
+
+We can note that, the operator $$ U(t+dt,t) \equiv \mathbf{I} - i \mathbf{H(t)} dt$$ is unitary. and $$ \mathbf{U U^{\dagger}}=1$$
+up to linear order $$ dt$$.
+
+If $$  \mathbf{H}$$ is time independent, the solution to the schrodinger equation is
+
+$$
+\mathbf{U(t',t)} = e^{-i(t'-t) \mathbf{H}}
+$$
+
+* Axiom 5. Composite Systems.
+If the Hilbert space of system $$ A$$ is $$ H_A$$ and the Hilbert space of the system $$ B$$ is $$ H_B$$, then
+the composite system $$ AB$$ is the tensor product $$ H_A \otimes H_B$$. If the system A is prepared
+in $$ \ket{\psi}_A$$ and the syste, B is prepared in the state $$ \ket{\phi}_B$$, then the composite system state is $$ \ket{\psi}_A \otimes \ket{\phi}_B$$ 
+
+Let $$ \ket{i_A}$$ forms an orthonormal basis for $$ \mathbb{H_A}$$ and
+$$ \ket{\mu_B}$$ firns an orthonormal basis for $$ \mathbb{H_B}$$,
+the new basis is in $$ \mathbb{H_A \otimes H_B}$$ denoted as $$\ket{i,\mu}_{AB}$$.
+
+Some good properties:
+$$
+\begin{aligned}
+	\braket{i,\mu|j,\nu} &= \delta_{ij} \delta_{\mu \nu} \
+\mathbf{M_A} \otimes \mathbf{N_B} \ket{i,\mu} &= \mathbf{M_A} \ket{i}_A
+\otimes \mathbf{N_B} \ket{\mu}_B =
+\sum_{j,\nu} \ket{j,\nu} (M_A)_{ji} (N_B)_{\nu \mu}
+\end{aligned}
+$$
+
+
+
+
+
+
+
+
+

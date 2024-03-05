@@ -1,14 +1,15 @@
 :PROPERTIES:
-:ID:       a8762539-aff2-446d-9c6f-40257fd9ad57
+:ID:       23af74d8-4dd3-4f9b-9482-7aac308ecc97
 :END:
-#+title: QuantumBits
+#+title: qubit
 #+filetags: :moc: 
 #+hugo_base_dir: /home/phihungnguyen/quartz 
 #+hugo_section: QuantumInformation/FundamentalConcepts
-#+date: [2024-02-27 Tue]
-#+hugo_lastmod: [2024-02-27 Tue]
-#+hugo_tags: noexport
-*Link*: [[id:6469830a-5759-441d-ad26-ff2b5442f5f2][MathforQuantumInformation]] 
+#+date: [2024-02-29 Thu]
+#+hugo_lastmod: [2024-02-29 Thu]
+#+hugo_tags: 
+*Link*:  
+
 
 
 * Quick Look at Important Information:
@@ -23,7 +24,7 @@ Qubits can be in states different than $ \ket{0}$ and $ \ket{1}$.
 For example, the qubit could be in the superposition state:
 $$ \ket{\psi} = \alpha \ket{0} + \beta \ket{1} $$.
 
-The states $$ \ket{0} $$ and  $$ \ket{1} $$ form a [[id:8d532ccd-ab9f-4d6d-82d1-2a88bdbe8aa8][complete]]
+The states $$ \ket{0} $$ and  $$ \ket{1} $$ form a [[id:26e03365-90f8-48e3-b00f-29cba03b5251][complete]]
 and [[id:b3ae2a51-bf60-4287-9466-260a2293bf94][orthonormal basis]]. These states are also called the computational
 bases. 
 
@@ -61,3 +62,4 @@ One might wonder how much information the qubit could store. Before the measurem
 to cover all the space. However, the information only collapses to 1 bit at the end.
 
 Reference: EEE 492, Quantum Computation and Quantum Information
+

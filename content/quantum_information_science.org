@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       2fef3824-a683-4810-b2bf-b507ef422063
+:END:
+#+title: quantum-information-science
+#+filetags: :moc: 
+#+hugo_base_dir: /home/phihungnguyen/quartz 
+#+hugo_section: notes
+#+date: [2024-03-01 Fri]
+#+hugo_lastmod: [2024-03-01 Fri]
+#+hugo_tags: export
+*Link*:  
+
+Fundamental of Science
+[[id:6469830a-5759-441d-ad26-ff2b5442f5f2][MathforQuantumInformation]]
+
+Axioms of Quantum
+[[id:6a188d9f-a9c6-4c85-824f-b97e8dd0f76e][axioms-of-quantum-mechanics]]
+
+The space quantum is written
+[[id:02ca0058-f6a9-4c68-8780-fdfeb5f7e06e][hilbert-space]]
+
+The physical implementation
+[[id:23af74d8-4dd3-4f9b-9482-7aac308ecc97][qubit]], and [[id:5c369b3c-9296-4f6c-aad5-4f17e619d55a][MultipleQubits]]
+
+The algorithms for speed ups
+[[id:e6ddab00-5c65-4113-aecf-2fc8c66f566c][Deutsch's Algorithm]], [[id:e66c5ded-28d1-46f1-872c-522e3f15c0af][Query Problem]]
+

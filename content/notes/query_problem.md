@@ -9,6 +9,10 @@ draft = false
 
 **Link**:
 
+<a id="figure--fig:SED-HR4049"></a>
+
+{{< figure src="/ox-hugo/banner.png" caption="<span class=\"figure-number\">Figure 1: </span>Longer caption." >}}
+
 The computational model is usually built as
 
 

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       fe8f4de7-2974-4d8d-91fb-181537d35c73
+:END:
+#+title: preskill_quantum-computing_2018
+#+filetags: :moc:
+#+BIBLIOGRAPHY: /home/phihungnguyen/quartz/content/literature_review/bibliography/bibliography.bib 
+#+hugo_base_dir: /home/phihungnguyen/quartz 
+#+hugo_section: literature_review
+#+date: [2024-03-01 Fri]
+#+hugo_lastmod: [2024-03-01 Fri]
+#+hugo_tags:
+*Link*:  
+
+
+[cite:@Preskill2018quantumcomputingin]
+
+
+With quantum computers we should be able to probe more deeply into
+the properties of complex molecules and exotic materials, and also to explore fundamental
+physics in new ways, for example by simulating the properties of elementary particles, or
+the quantum behavior of a black hole, or the evolution of the universe right after the big
+bang. [cite:@Preskill2018quantumcomputingin pp. 2] 
+

@@ -1,13 +1,13 @@
 +++
-title = "QuantumBits"
+title = "qubit"
 author = ["DESKTOP-PNLN52S"]
-date = 2024-02-27T00:00:00-07:00
-lastmod = 2024-02-27T00:00:00-07:00
-tags = ["noexport"]
+date = 2024-02-29T00:00:00-07:00
+lastmod = 2024-02-29T00:00:00-07:00
+tags = ["moc"]
 draft = false
 +++
 
-**Link**: [MathforQuantumInformation]({{< relref "mathforquantuminformation.md" >}})
+**Link**:
 
 
 ## Quick Look at Important Information: {#quick-look-at-important-information}
@@ -24,8 +24,8 @@ Qubits can be in states different than $ \ket{0}$ and $ \ket{1}$.
 For example, the qubit could be in the superposition state:
 \\[ \ket{\psi} = \alpha \ket{0} + \beta \ket{1} \\].
 
-The states \\[ \ket{0} \\] and  \\[ \ket{1} \\] form a [complete]({{< relref "mathforquantuminformation.md#complete" >}})
-and [orthonormal basis]({{< relref "mathforquantuminformation.md#orthonormal-basis" >}}). These states are also called the computational
+The states \\[ \ket{0} \\] and  \\[ \ket{1} \\] form a complete [Complete]({{< relref "math-for-qis.md#complete" >}})
+and [orthonormal basis]({{< relref "math-for-qis.md#orthonormal-basis" >}}). These states are also called the computationaal
 bases.
 
 When we measure this qubit in computational basis, the result we get
@@ -63,4 +63,30 @@ the relative phase \\[e^{i\phi}\\] plays a very important role. (Note: \\[e^{i(\
 One might wonder how much information the qubit could store. Before the measurement, the qubit superposition seems
 to cover all the space. However, the information only collapses to 1 bit at the end.
 
-Reference: EEE 492, Quantum Computation and Quantum Information
+
+## Spin 1/2 representation {#spin-1-2-representation}
+
+From the definition of [symmetry]({{< relref "math-for-qis.md#symmetry" >}}) and [generator]({{< relref "math-for-qis.md#generator-of-symmetry" >}})
+Let's now apply to rotations! An infinitestimal rotation counterclockwise about
+\\[ \hat{n} = (n\_1,n\_2,n\_3)\\] is expressed as:
+
+\\[
+R(\hat{n},\theta) = I - i d\theta \hat{n} \cdot \vec{J}
+\\]
+
+Thus, a finite rotation is:
+
+\\[
+R(\hat{n},\theta) = e^{-i \theta \hat{n} \cdot \vec{J}}
+\\]
+
+Rotation of distinct axis dont commute since the relations is.
+\\[
+[J\_k,J\_l] = i \epsilon\_{klm} J\_m
+\\]
+
+Now, we find the unitary version of rotations \\[ \mathbf{J}\\]
+
+continue nextime here
+
+Reference: EEE 492, Quantum Computation and Quantum Information, Preskill's Lecture
